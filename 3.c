@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main()
+{
 	
 	int num_of_program;
 	float a, x, G, Y, F;
@@ -34,7 +35,7 @@ int main(){
 				continue;
 			}
 			else{
-				G = 0 - (3* (14*pow(a,2) + 23*a*i - 30*pow(i,2)))/( (0-(9*pow(a,2))) + 37*a*i + 40*pow(i,2));
+				G = -(3*(14*(a*2)+23*a*x-30*(x*2)))/-9*(a*2)+37*a*x+40*(x*2);
 				printf("G = %f\n",G);
 				printf("\nDo you want to stop the calculations? (1/0)\n");
 				scanf("%d",&answer);
@@ -58,7 +59,7 @@ int main(){
 				continue;
 			}
 			if ((-4<a<4) && (-4<x<4)) {
-				F = 0 - tan(18*pow(a,2) - a*i - 4*pow(i,2));
+				F = -tan(18*(a*2)-a*x-4*(x*2));
 				printf("\nF = %f\n",F); 
 				printf("\nDo you want to stop the calculations? (1/0)\n");
 				scanf("%d",&answer);
@@ -91,7 +92,7 @@ int main(){
 				continue;
 			}	
 			else {
-				Y = (log(35*pow(a,2)- 27*a*i + 4*pow(i,2) +1))/log(2);
+				Y = log(35*(a*2)-27*a*x+4*(x*2)+1)/log(2);
 				printf("\nY = %f\n",Y);
 				printf("\nDo you want to stop the calculations? (1/0)\n");
 				scanf("%d",&answer);
