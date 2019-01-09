@@ -2,7 +2,8 @@
 #include <math.h>
 #include <string.h>
 #include <stdlib.h>
-int main() {
+int main() 
+{
 	
 int num_of_program, iterations, i = 0, k = 0 , ran_a1, ran_a2, ran_x1, ran_x2, answer, amount_of_shablons = 0;
 float a, x, G, Y, F, min_a, min_x, max_a, max_x, array_a[100], array_x[100], array_G[100], array_F[100], array_Y[100], shablon;
