@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main()
+{
 	
 	int number;
 	float a, x, G, Y, F;
@@ -18,7 +19,7 @@ int main(){
 			printf("\nCan't divine on zero.\nDo not enter 0 and 0\n");
 		}
 		else{
-			G = 0 - (3* (14*pow(a,2) + 23*a*x - 30*pow(x,2)))/( (0-(9*pow(a,2))) + 37*a*x + 40*pow(x,2));
+			G = -(3*(14*(a*2)+23*a*x-30*(x*2)))/-9*(a*2)+37*a*x+40*(x*2);
 			printf("G = %f\n",G);
 		}
 		break;
@@ -28,7 +29,7 @@ int main(){
 		printf("Enter a and x\n");
 		scanf("%f %f",&a,&x);
 		if ((-4<a<4) && (-4<x<4)) {
-			F = 0 - tan(18*pow(a,2) - a*x - 4*pow(x,2));
+			F = -tan(18*(a*2)-a*x-4*(x*2));
 			printf("\nF = %f\n",F); 
 		}
 		else{
@@ -44,7 +45,8 @@ int main(){
 			printf("\nImpossible to count. Error: -1#IND00\n Enter 0 and 0 to get possible result");
 		}	
 		else {
-			Y = (log(35*pow(a,2)	- 27*a*x + 4*pow(x,2) +1))/log(2);
+			Y = log(35*(a*2)-27*a*x+4*(x*2)+1)/log(2);
+
 			printf("\nY = %f\n",Y);
 		}
 		break;
