@@ -20,7 +20,8 @@ int point_in_circle(int x, int y, float radius) {
 	}
 }
 
-int main() {
+int main() 
+{
 
 	// Creating points
 	int number, i = 0;
