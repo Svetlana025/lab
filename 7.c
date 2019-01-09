@@ -8,7 +8,8 @@ struct array_of_structures {
 } base[5];
 // base[0] - a, base[1] - x, base[2] - G, base[3] - F, base[4] - Y.
 
-int main() {
+int main() 
+{
 	
 FILE *file_write;
 file_write = fopen("functions.txt", "w");
@@ -52,7 +53,7 @@ for (i; i < iterations; i++) {
 		continue;
 	}
 	else {
-		G = 0 - (3* (14*pow(a,2) + 23*a*x - 30*pow(x,2)))/((0-(9*pow(a,2))) + 37*a*x + 40*pow(x,2));
+		G = -(3*(14*(a*2)+23*a*x-30*(x*2)))/-9*(a*2)+37*a*x+40*(x*2);
 		if (G == shablon) {
 			amount_of_shablons++;
 		}
@@ -61,7 +62,7 @@ for (i; i < iterations; i++) {
 	}
 	// F
 	if ((-4<a<4) && (-4<x<4)) {
-		F = 0 - tan(18*pow(a,2) - a*x - 4*pow(x,2));
+		F = -tan(18*(a*2)-a*x-4*(x*2));
 		if (F == shablon) {
 			amount_of_shablons++;
 		}
@@ -81,7 +82,7 @@ for (i; i < iterations; i++) {
 		continue;
 	}	
 	else {
-		Y = (log(35*pow(a,2) - 27*a*x + 4*pow(x,2) +1))/log(2);
+		Y = log(35*(a*2)-27*a*x+4*(x*2)+1)/log(2);
 		if (Y == shablon) {
 			amount_of_shablons++;
 		}
