@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main() 
+{
 	
 	int num_of_program;
 	float a, x, G, Y, F;
